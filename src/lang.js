@@ -4,6 +4,7 @@ define(function(require, exports, module) {
         'de': require('../l10n/de'),
         'fr': require ('../l10n/fr'),
         'zh_CN': require('../l10n/zh_CN')
+        'zh_TW': require('../l10n/zh_TW')
     };
     var defaultLang = 'en';
     function lang(text, block, lang) {
