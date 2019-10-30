@@ -85,7 +85,7 @@ define(function(require, exports, module) {
             'italic': '斜體',
             'forecolor': '顏色',
             'fontfamily': '字型',
-            'fontsize': '字型大小',
+            'fontsize': '大小',
             'layoutstyle': '配置樣式',
             'node': '節點操作',
             'hand': '允許拖曳',
