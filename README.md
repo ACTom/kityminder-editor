@@ -47,15 +47,17 @@ Their differences and connections are as follows:
 - Thumbnail: Support for thumbnail viewing/navigation
 
 ## Development and Use
+
 The `index.html` in the root directory is the development environment, and the
 `index.html` in the `dist` directory uses the packaged code for the online
 environment.
 
 1. Install [nodejs](http://nodejs.org) and [npm](https://docs.npmjs.com/getting-started/installing-node)
-2. Initialize: Cut to the kityminder-editor root directory to run `npm run init`
-3. Run `grunt dev` in the kityminder-editor root directory to start the project.
-4. You can develop based on the `index.html` of the root directory, or view the
-`index.html` for the production environment in the `dist` directory, Enjoy it!
+2. Initialize: 
+   1. go to the kityminder-editor root directory and run `npm run init`
+   2. Run `grunt dev` in the kityminder-editor root directory to start the project.
+3. You can develop based on the `index.html` in the root directory, or view the
+`index.html` for the production environment in the `dist` directory. Enjoy!
 
 In addition, kityminder-editor also provides a bower package for developers to
 use directly. You can use the kityminder-editor project directory.
