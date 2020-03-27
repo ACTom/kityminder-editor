@@ -2,10 +2,10 @@ define(function(require, exports, module) {
     return module.exports = {
         'template': {
             'default': 'Mindmap',
-            'tianpan': 'Nébuleuse',
+            'tianpan': 'Cadran',
             'structure': 'Organigramme',
-            'filetree': 'Organigramme annuaire',
-            'right': 'Diagramme logique',
+            'filetree': 'Organigramme hiérarchique',
+            'right': 'Organigramme logique',
             'fish-bone': 'Squelette'
         },
         'theme': {
@@ -34,13 +34,13 @@ define(function(require, exports, module) {
         'topic': 'branche',
         'panels': {
             'history': 'historique',
-            'template': 'modele',
-            'theme': 'theme',
+            'template': 'modèle',
+            'theme': 'thème',
             'layout': 'disposition',
             'style': 'style',
             'font': 'texte',
             'color': 'couleur',
-            'background': '',
+            'background': 'fond',
             'insert': 'insérer',
             'arrange': 'ajuster',
             'nodeop': 'actuel',
@@ -60,7 +60,7 @@ define(function(require, exports, module) {
                 'editnode': 'Editer',
                 'arrangeup': 'Monter',
                 'arrangedown': 'Descendre',
-                'resetlayout': 'Re-organise',
+                'resetlayout': 'Réorganise',
                 'expandtoleaf': 'Déplier tous les noeuds',
                 'expandtolevel1': 'Déplier au niveau 1',
                 'expandtolevel2': 'Déplier au niveau 2',
@@ -74,8 +74,8 @@ define(function(require, exports, module) {
             'search': 'Recherche',
             'expandtoleaf': 'Déplier',
             'back': 'retour',
-            'undo': 'Annuler (Ctrl + Z)',
-            'redo': 'Rétablir (Ctrl + Y)',
+            'undo': 'Annuler (Ctrl-Z)',
+            'redo': 'Rétablir (Ctrl-Y)',
             'tabs': {
                 'idea': 'Edition',
                 'appearence': 'Style',
@@ -86,12 +86,12 @@ define(function(require, exports, module) {
             'forecolor': 'Couleur',
             'fontfamily': 'Police',
             'fontsize': 'Taille',
-            'layoutstyle': 'Theme',
+            'layoutstyle': 'Thème',
             'node': 'Node operation',
-            'hand': 'Activer le glisser',
+            'hand': 'Mode déplacement',
             'camera': 'Centrer sur le noeud principal',
             'zoom-in': 'Agrandir (Ctrl+)',
-            'zoom-out': 'Dezoomer (Ctrl-)',
+            'zoom-out': 'Dézoomer (Ctrl-)',
             'markers': 'tag',
             'help': 'Aide',
             'preference': 'Préférences',
@@ -102,8 +102,8 @@ define(function(require, exports, module) {
             'clearstyle': 'Effacer le style',
             'copystyle': 'Copier le style',
             'pastestyle': 'Coller le style',
-            'appendsiblingnode': 'Même theme',
-            'appendchildnode': 'theme enfant',
+            'appendsiblingnode': 'Même thème',
+            'appendchildnode': 'thème enfant',
             'arrangeup': 'Monter',
             'arrangedown': 'Descendre',
             'editnode': 'Editer',
@@ -112,15 +112,15 @@ define(function(require, exports, module) {
 	    'priority': 'Priorité',
             'progress': {
                 'p1': 'Non démarré',
-                'p2': 'Completé à 1/8',
-                'p3': 'Completé à 1/4',
-                'p4': 'Completé à 3/8',
-                'p5': 'Completé à moité',
-                'p6': 'Completé à 5/8',
-                'p7': 'Completé à 3/4',
-                'p8': 'Completé à 7/8',
+                'p2': 'Fait à 1/8',
+                'p3': 'Fait au 1/4',
+                'p4': 'Fait à 3/8',
+                'p5': 'Fait à moité',
+                'p6': 'Fait à 5/8',
+                'p7': 'Fait aux 3/4',
+                'p8': 'Fait à 7/8',
                 'p9': 'Terminé',
-                'p0': 'Supprimer la progression'
+                'p0': 'Masquer la progression'
             },
             'resource': {
                 'add': 'Ajouter'
@@ -134,7 +134,7 @@ define(function(require, exports, module) {
             'removelink': 'Supprimer un lien existant',
             'removeimage': 'Supprimer une image existante',
             'removenote': 'Supprimer une note existante',
-            'resetlayout': 'Re-organise',
+            'resetlayout': 'Réorganise',
             'navigator': 'Navigateur',
             'selectall': 'Selectionner tout',
             'selectrevert': 'Inverser la selection',
@@ -144,7 +144,7 @@ define(function(require, exports, module) {
             'selecttree': 'Sélectionner la sous-arborescence',
             'noteeditor': {
                 'title': 'Note',
-                'hint': 'Supporte la syntax GFM',
+                'hint': 'Accepte la syntaxe GFM (GitHub)',
                 'placeholder': 'Merci de sélectionner une note'
             },
             'dialog': {
@@ -159,7 +159,7 @@ define(function(require, exports, module) {
                     'placeholder2': 'Requis：Commence par http(s)://',
                     'imagehint': 'Astuce：',
                     'placeholder3': 'Optionnel：Texte au survol de l\'image',
-                    'preview': 'Apercus de l\'image：',
+                    'preview': 'Aperçu de l\'image：',
                     'uploadimage': 'Charger une image',
                     'selectfile': 'Ouvrir un fichier...',
                     'ok': 'OK',
@@ -171,7 +171,7 @@ define(function(require, exports, module) {
                     'linkurl': 'Adresse：',
                     'linkhint': 'Astuce：',
                     'placeholder': 'Requis：Commence par http(s):// ou ftp://',
-                    'placeholder2': 'Optionnel: Texte au survol du lien',
+                    'placeholder2': 'Optionnel: apparait au survol du lien',
                     'ok': 'OK',
                     'cancel': 'Annuler'
 
