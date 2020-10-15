@@ -119,7 +119,7 @@ define(function(require, exports, module) {
                 'p7': '3/4 fertiggestellt',
                 'p8': '7/8 fertiggestellt',
                 'p9': 'Abgeschlossen',
-                'p0': 'Klarer Fortschritt'
+                'p0': 'Fortschritt entfernen'
             },
             'resource': {
                 'add': 'hinzufügen'
