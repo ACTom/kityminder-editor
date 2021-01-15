@@ -169,7 +169,7 @@ define(function(require, exports, module) {
                     'title': 'Link',
                     'linkurl': 'URL：',
                     'linkhint': 'Hinweis：',
-                    'placeholder': 'Muss mit http(s):// oderftp:// beginnen',
+                    'placeholder': 'Muss mit http(s):// oder ftp:// beginnen',
                     'placeholder2': 'Optional: Text für den Tooltip, wenn die Maus sich über dem Link befindet',
                     'ok': 'OK',
                     'cancel': 'Abbrechen'
@@ -187,10 +187,10 @@ define(function(require, exports, module) {
                 'maintopic': 'Hauptthema'
             },
             'node': {
-                'arrangeup': 'Arrange Up',
+                'arrangeup': 'nach oben',
                 'appendchildnode': 'Neuer Unterknoten',
                 'appendsiblingnode': 'Neuer Geschwisterknoten',
-                'arrangedown': 'Arrange Down',
+                'arrangedown': 'nach unten',
                 'removenode': 'Knoten löschen',
                 'appendparentnode': 'Append Parent Node',
                 'selectall': 'Alles auswählen',
